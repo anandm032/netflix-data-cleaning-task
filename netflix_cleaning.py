@@ -1,6 +1,5 @@
 import pandas as pd
-df = pd.read_csv("netflix_titles.csv")  # Make sure the CSV file is in the same folder
-
+df = pd.read_csv("netflix_titles.csv") 
 print("Dataset Shape:", df.shape)
 print("\nColumn Info:")
 print(df.info())
@@ -29,4 +28,5 @@ print("Duplicates After Dropping:", df.duplicated().sum())
 
 df.to_csv('netflix_titles_cleaned.csv', index=False)
 print("✅ Cleaned data saved as 'netflix_titles_cleaned.csv'")
+
 
